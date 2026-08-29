@@ -3,13 +3,27 @@
   "version": "1.0.0",
   "description": "Production-grade AI-Powered Intelligent Email Management System with Gmail OAuth, Gemini/OpenAI AI suite, and modern React dashboard",
   "main": "server/src/server.js",
+  "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:server": "npm --prefix server run dev",
     "dev:client": "npm --prefix client run dev",
-    "start": "npm --prefix server start",
+    "start": "node server/src/server.js",
     "build": "npm --prefix client run build",
+    "postinstall": "npm --prefix server install",
     "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^140.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
