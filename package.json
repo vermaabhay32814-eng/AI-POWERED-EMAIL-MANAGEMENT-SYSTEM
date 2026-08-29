@@ -1,0 +1,29 @@
+{
+  "name": "ai-powered-email-management-system",
+  "version": "1.0.0",
+  "description": "Production-grade AI-Powered Intelligent Email Management System with Gmail OAuth, Gemini/OpenAI AI suite, and modern React dashboard",
+  "main": "server/src/server.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start": "npm --prefix server start",
+    "build": "npm --prefix client run build",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "email",
+    "ai",
+    "gmail-api",
+    "gemini",
+    "react",
+    "nodejs",
+    "express",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT"
+}
