@@ -302,4 +302,6 @@ To connect your personal/work Gmail account directly:
 
 ## 📄 14. License
 
+LIVE DEMO LINK -> https://ai-powered-email-management-system.vercel.app/
+
 This project is licensed under the **MIT License** — feel free to use and adapt for personal or commercial projects.
